@@ -30,4 +30,5 @@ For a quickstart, you need download images of MM-ID and model weights, to comple
 The majority of this project is licensed under [Qwen-VL License](https://github.com/QwenLM/Qwen-VL/blob/master/LICENSE).
 
 # Acknowledge
-* [Qwen-VL](https://github.com/QwenLM/Qwen-VL): The codebase we built upon.
+* [Qwen-VL](https://github.com/QwenLM/Qwen-VL): The codebase we build upon.
+* [MovieNet](https://movienet.github.io/): The main dataset we use for tuning data construction.
