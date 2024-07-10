@@ -12,7 +12,7 @@ if __name__ == '__main__':
 
     model = "gptv"
     client = openai.AzureOpenAI( 
-        azure_endpoint="https://search.bytedance.net/gpt/openapi/online/multimodal/crawl", 
+        azure_endpoint="xxxxxxxx", 
         api_version="gpt-4-vision", 
         api_key="xxxxxxxxx") 
 

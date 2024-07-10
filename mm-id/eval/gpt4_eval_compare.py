@@ -14,7 +14,7 @@ class GPT4:
         super().__init__ () 
         self.model = model 
         self.client = openai.AzureOpenAI( 
-            azure_endpoint="https://search.bytedance.net/gpt/openapi/online/v2/crawl", 
+            azure_endpoint="xxxxxxxx", 
             api_version=api_version, 
             api_key=api_key) 
     def message(self, content): 

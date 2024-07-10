@@ -25,5 +25,9 @@ In [MM-ID](./mm-id/), we introduce the task format and evaluation methods. [ID_r
 
 For a quickstart, you need download images of MM-ID and model weights, to complete instruction task with ID inference. 
 
+# License
+
+The majority of this project is licensed under [Qwen-VL License](https://github.com/QwenLM/Qwen-VL/blob/master/LICENSE).
+
 # Acknowledge
 * [Qwen-VL](https://github.com/QwenLM/Qwen-VL): The codebase we built upon.
