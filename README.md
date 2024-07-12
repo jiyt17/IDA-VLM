@@ -1,6 +1,6 @@
 # IDA-VLM
 
-This is the code base for [IDA-VLM: Towards Movie Understanding via ID-Aware Large Vision-Language Model]().
+This is the code base for [IDA-VLM: Towards Movie Understanding via ID-Aware Large Vision-Language Model](https://arxiv.org/pdf/2407.07577).
 
 We propose visual instruction tuning with ID reference, which unleashes the potential of LVLM in identity memory and recognition across diverse scenes, and develop an ID-aware LVLM, IDA-VLM. This paper paves the way for future artificial intelligence systems to possess multi-identity visual inputs, thereby facilitating the comprehension of complex visual narratives like movies.
 
