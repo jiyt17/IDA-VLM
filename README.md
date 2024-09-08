@@ -15,9 +15,8 @@ https://img1.doubanio.com/view/photo/l/public/p2625512480.webp, https://img1.dou
 Todo list:
 
 - [x] Release code.
-- [ ] Release benchmark images, tuning data, model weights. (under the approval process)
-- [ ] Easy start.
-- [ ] Make Demo.
+- [x] Release benchmark images, tuning data.
+- [ ] Release model weights and easy start.
 
 We have three main contributions: [MM-ID](./mm-id/), [tuning data construction](./ID_reference_data/) and [model training](./model).
 
