@@ -10,6 +10,14 @@ The [instruction data](https://huggingface.co/jiyatai/IDA-VLM/blob/main/tuning/a
 
 Users should prepare images of these datasets following:
 
+VCR: [link](https://visualcommonsense.com/download/).
+
+Flickr30k: [jsonl](https://github.com/shikras/shikra/blob/main/docs/data.md), [imgs](https://huggingface.co/datasets/nlphuji/flickr30k/tree/main).
+
+RefCoco: [annotations](https://github.com/lichengunc/refer), imgs(COCO)
+
+Then crop sub-images with the transform codes.
+
 ## The second-stage tuning data
 
 For MovieNet, we use GTP4v to annotate question-answer pairs and captions data.
