@@ -33,6 +33,8 @@ ID-Former's architecture can be seen in Line 153 of visual.py in model folder. A
 
 Note that if you want to train with ID-Former, you need open 'use_llava', which will use two dataloader, one is for ID reference tuning data and the other one is for llava, sharegpt4v training data.
 
+To load two dataloaders, you need replace trainer.py in your transformers lib.
+
 </details>
 
 In the newest version, we use vcr(30k), f30k(30k), RefCOCO(20k), llava(10k) in the first stage tuning, and MovieNet(60k), llava(6k), sharegpt4v(4k) in the second stage. Under this condition, IDA-VLM has comprehensive highest performance. 
