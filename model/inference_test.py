@@ -43,7 +43,7 @@ for id in range(len(new_test_set)):
     for k in test_sample.keys():
         if k.startswith('image'):
             img_num += 1
-    if test_sample['id'] < 360:
+    if test_sample['type'] != 'matching':
         for i in range(img_num):
             img_id = f'image_{i+1}'
             question = question.replace(img_id, test_sample[img_id])
