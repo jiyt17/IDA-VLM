@@ -6,7 +6,7 @@
 
 IDA-VLM is fine-tuned from [Qwen-VL-Chat](https://github.com/QwenLM/Qwen-VL). We adopt a dual-stage fine-tuning method to train the model on identity memory and recognition across diverse scenes.
 
-The initial phase leverages annotations in VCR, Flickr30k and RefCOCO, while the second stage tuning data is based on MovieNet.
+The initial phase leverages annotations in VCR, Flickr30k and RefCOCO, while the second stage tuning data is based on MovieNet. We mix tuning data from LLaVA and ShareGPT4V into our data at a ratio of around 10%.
 
 The running environment is the same as Qwen-VL's. Our finetuning code:
 
@@ -16,7 +16,7 @@ To inference on MM-ID:
 
 > python inference_test.py
 
-The fine-tuned model weight can be downloaded from [here]().
+In the newest version, we use vcr(30k), f30k(30k), RefCOCO(20k), llava(10k) in the first stage tuning, and MovieNet(60k), llava(6k), sharegpt4v(4k) in the second stage. Under this condition, IDA-VLM has comprehensive highest performance. The fine-tuned model weight can be downloaded from [here](https://huggingface.co/jiyatai/IDA-VLM/tree/main/weights/model-base).
 
 More model details can be found at [Qwen-VL-Chat](https://github.com/QwenLM/Qwen-VL).
 
@@ -37,12 +37,8 @@ To load two dataloaders, you need replace trainer.py in your transformers lib.
 
 </details>
 
-In the newest version, we use vcr(30k), f30k(30k), RefCOCO(20k), llava(10k) in the first stage tuning, and MovieNet(60k), llava(6k), sharegpt4v(4k) in the second stage. Under this condition, IDA-VLM has comprehensive highest performance. 
-
-| Model            | Matching | Location |  QA  | Caption |
-| ---------------- | -------- | -------- | ---- | ------- |
-| IDA-VLM (500s)   |  0.806   |  0.854   | 5.74 |   5.32  |
-| IDA-VLM (2500s)  |  0.791   |  0.821   | 5.54 |   5.44  |
+The weights of IDA-VLM with ID-Former is [here](https://huggingface.co/jiyatai/IDA-VLM/tree/main/weights/model-idf).
 
 
-The weights of the newest version is [here]().
+
+
