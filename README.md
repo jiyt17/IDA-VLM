@@ -16,13 +16,13 @@ Todo list:
 
 - [x] Release code.
 - [x] Release benchmark images, tuning data.
-- [ ] Release model weights and easy start.
+- [x] Release model weights and easy start.
 
 We have three main contributions: [MM-ID](./mm-id/), [tuning data construction](./ID_reference_data/) and [model training](./model).
 
 In [MM-ID](./mm-id/), we introduce the task format and evaluation methods. [ID_reference_data](./ID_reference_data/) contains the processing code for producing instruction tuning data. [Model](./model/) includes training and inference code, which is based on Qwen-VL-Chat.
 
-For a quickstart, you need download images of MM-ID and model weights, to complete instruction task with ID inference. 
+For a quickstart, you need download images of MM-ID (or prepare ID images and test images of your own) and model weights, to complete instruction task with ID inference, detailed in [Model](./model/). 
 
 # License
 
