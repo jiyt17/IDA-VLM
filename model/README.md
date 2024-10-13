@@ -39,6 +39,26 @@ To load two dataloaders, you need replace trainer.py in your transformers lib.
 
 The weights of IDA-VLM with ID-Former is [here](https://huggingface.co/jiyatai/IDA-VLM/tree/main/weights/model-idf).
 
+## Easy Start
+
+This is an example for using IDA-VLM, and more examples can be found in MM-ID. You can perpare your own images for test according to our data format.
+
+```python
+from transformers import AutoModelForCausalLM, AutoTokenizer
+from transformers.generation import GenerationConfig
+import torch
+torch.manual_seed(1234)
+
+model_path = "/path/to/IDA-VLM/weights"
+tokenizer = AutoTokenizer.from_pretrained(model_path, trust_remote_code=True)
+model = AutoModelForCausalLM.from_pretrained(model_path, device_map="cuda", trust_remote_code=True).eval()
+model.generation_config = GenerationConfig.from_pretrained(model_path, trust_remote_code=True)
+
+question = "Heizi is <img>./example/Heizi_1.jpg</img>\n Leizi is <img>./example/Leizi_2.jpg</img>\n Chuchun is <img>./example/Chuchun_1.jpg</img>\n In the image: <img>./example/Chaopao_23</img>\n What is Chuchun doing?"
+response, history = model.chat(tokenizer, query=question, history=None)
+print('user:', question)
+print('assistant: ', response)
+```
 
 
 
