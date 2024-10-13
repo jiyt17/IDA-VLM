@@ -58,6 +58,7 @@ question = "Heizi is <img>./example/Heizi_1.jpg</img>\n Leizi is <img>./example/
 response, history = model.chat(tokenizer, query=question, history=None)
 print('user:', question)
 print('assistant: ', response)
+# Chuchun is pushing Heizi in a wheelchair.
 ```
 
 
