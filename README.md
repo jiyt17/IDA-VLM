@@ -1,5 +1,7 @@
 # IDA-VLM
 
+IDA-VLM weights <a href="https://huggingface.co/jiyatai/IDA-VLM">🤗</a>, MM-ID <a href="https://huggingface.co/jiyatai/MM-ID">🤗</a>, Visual instrution tuning data with ID reference <a href="https://huggingface.co/datasets/jiyatai/visual_instruction_tuning_ID_reference">🤗</a>.
+
 This is the code base for [IDA-VLM: Towards Movie Understanding via ID-Aware Large Vision-Language Model](https://arxiv.org/pdf/2407.07577).
 
 We propose visual instruction tuning with ID reference, which unleashes the potential of LVLM in identity memory and recognition across diverse scenes, and develop an ID-aware LVLM, IDA-VLM. This paper paves the way for future artificial intelligence systems to possess multi-identity visual inputs, thereby facilitating the comprehension of complex visual narratives like movies.
