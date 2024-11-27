@@ -6,7 +6,7 @@ We release the data processing code that transforms original data to instruction
 
 ## The first-stage tuning data
 
-The [instruction data](https://huggingface.co/jiyatai/IDA-VLM/blob/main/tuning/alpha_vcr_ref_f30k_llava.json) of the first-stage tuning is from VCR, RefCOCO, Flickr30k.
+The [instruction data](https://huggingface.co/datasets/jiyatai/visual_instruction_tuning_ID_reference/blob/main/alpha_vcr_ref_f30k_llava.json) of the first-stage tuning is from VCR, RefCOCO, Flickr30k.
 
 Users should prepare images of these datasets following:
 
@@ -22,6 +22,6 @@ Then crop sub-images with the transform codes.
 
 For MovieNet, we use GTP4v to annotate question-answer pairs and captions data.
 
-The generated instruction tuning data can be downloaded from [here](https://huggingface.co/jiyatai/IDA-VLM/blob/main/tuning/beta_gpt4v_mix_mini_new.json).
+The generated instruction tuning data can be downloaded from [here](https://huggingface.co/datasets/jiyatai/visual_instruction_tuning_ID_reference/blob/main/beta_gpt4v_mix_mini_new.json).
 
-To avoid downloading the whole MovieNet dataset for other researchers, we provide the involved images of MovieNet [here](https://huggingface.co/jiyatai/IDA-VLM/blob/main/tuning/imgs.zip).
+To avoid downloading the whole MovieNet dataset for other researchers, we provide the involved images of MovieNet [here](https://huggingface.co/datasets/jiyatai/visual_instruction_tuning_ID_reference/blob/main/imgs.zip).
